@@ -1,0 +1,70 @@
+@main-color: #042d70;
+@header-color: lighten(@main-color, 50%);
+@text-message-color: lighten(@main-color, 10%);
+@message-border-color: lighten(@main-color, 15%);
+body {
+    background-color: @main-color;
+}
+
+.discussion-container {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    width: 800px;
+    height: 600px;
+    .discussion-header {
+        flex-direction: row;
+        background-color: @header-color;
+        align-items: center;
+        padding-left: 10px;
+        height: 70px;
+    }
+
+    .discussion-body {
+        overflow-y: scroll;
+        margin: 10px;
+    }
+    .message {
+        background-color: @text-message-color;
+    }
+}
+h1 {
+    font-size: 18px;
+}
+.message-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.left-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 149px;
+    border-right: 1px solid silver;
+    .initials {
+        border-width: 80px;
+        border-height: 80px;
+        border: 1px solid @main-color;
+        border-radius: 30px;
+        padding: 15px;
+        background-color: @header-color;
+    }
+    .date {
+        font-size: 12px;
+    }
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 25px;
+    .author {
+        color: orange;
+    }
+    .message {
+        border: 1px solid @message-border-color;
+        padding: 10px 3px;
+    }
+}

@@ -1,58 +1,64 @@
+body {
+  background-color: #042d70;
+}
 .discussion-container {
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-    width: 800px;
-    height: 600px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  width: 800px;
+  height: 600px;
+}
+.discussion-container .discussion-header {
+  flex-direction: row;
+  background-color: #79aafa;
+  align-items: center;
+  padding-left: 10px;
+  height: 70px;
+}
+.discussion-container .discussion-body {
+  overflow-y: scroll;
+  margin: 10px;
+}
+.discussion-container .message {
+  background-color: #0641a1;
 }
 h1 {
-    font-size: 18px;
-}
-.discussion-header {
-    align-items: center;
-    padding-left: 10px;
-    background-color: #B0C4DE;
-    height: 70px;
+  font-size: 18px;
 }
 .message-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    background-color: #191970;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  color: white;
 }
-.message-container .left-side {
-    width: 150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.left-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 149px;
+  border-right: 1px solid silver;
 }
-.message-container .right-side {
-    width: 650px;
-    display: flex;
-    flex-direction: column;
+.left-side .initials {
+  border-width: 80px;
+  border-height: 80px;
+  border: 1px solid #042d70;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #79aafa;
 }
-.last-editor, .creation-date {
-    font-size: 10px;
-}
-.initials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border: 1px solid white;
-    border-radius: 30px;
-}
-.message-date {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
+.left-side .date {
+  font-size: 12px;
 }
 .right-side {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    border-left: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 25px;
+}
+.right-side .author {
+  color: orange;
+}
+.right-side .message {
+  border: 1px solid #074bba;
+  padding: 10px 3px;
 }
