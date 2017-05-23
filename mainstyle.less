@@ -44,11 +44,14 @@ h1 {
     width: 149px;
     border-right: 1px solid silver;
     .initials {
-        border-width: 80px;
-        border-height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
         border: 1px solid @main-color;
         border-radius: 30px;
-        padding: 15px;
+        padding: 0;
         background-color: @header-color;
     }
     .date {

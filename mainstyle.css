@@ -39,11 +39,14 @@ h1 {
   border-right: 1px solid silver;
 }
 .left-side .initials {
-  border-width: 80px;
-  border-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
   border: 1px solid #042d70;
   border-radius: 30px;
-  padding: 15px;
+  padding: 0;
   background-color: #79aafa;
 }
 .left-side .date {
