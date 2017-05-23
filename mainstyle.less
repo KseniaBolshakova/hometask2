@@ -13,24 +13,43 @@ body {
     width: 800px;
     height: 600px;
     .discussion-header {
-        flex-direction: row;
+        flex-direction: column;
         background-color: @header-color;
+        justify-content: flex-start;
         align-items: center;
         padding-left: 10px;
         height: 70px;
     }
-
+    .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 790px;
+    }
+    .topic {
+        width: 700px;
+    }
+    .close-button {
+        margin: 5px;
+    }
+    .created-info {
+        font-size: 12px;
+    }
+    
     .discussion-body {
         overflow-y: scroll;
         margin: 10px;
+        height: 510px;
     }
     .message {
         background-color: @text-message-color;
     }
+    
 }
 h1 {
     font-size: 18px;
 }
+
 .message-container {
     display: flex;
     flex-direction: row;
